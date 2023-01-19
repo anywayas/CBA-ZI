@@ -20,13 +20,15 @@ update unknown SSIs. Finally, the updated SSIs of two drugs are fed into the inf
 to consider the correlations between SSI s so as to improve the
 modeling capabilities for SSIs. Through a zigzag iteration mod-
 ule (ZI), it can capture SSIs which are difficult to learn directly.
-  *  We introduce bond types for chemical graphs of drugs and devise
+   * We introduce bond types for chemical graphs of drugs and devise
 a CBAGNN to better encode each substructure as a representation
 vector.
-  * We carry out extensive experiments on a benchmark dataset (i.e.,
+   * We carry out extensive experiments on a benchmark dataset (i.e.,
 Drugbank) to verify and analyze the effectiveness of CBA-ZI . The
 results show that CBA-ZI outperforms all baselines by a large
 margin on most evaluation metrics
+
+
 #### Experiment details
  new-old dataset     |ACC     | AUC           |AP     |F1
 -------- | -----|---------------| -----| -----
