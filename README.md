@@ -8,7 +8,7 @@ scalar indicating the probability whether drug co-administration of
 
 ##### Model
 
-![](C:\Users\weimin\Desktop\frame.png)
+![](.\figure\model.png)
 
 An overview of proposed Chemical Bonds Assisted Zigzag Iteration Network(CBA-ZI). It has three main components: a substructure encoder, a zigzag iteration module for SSI s, and
 an inference layer. The substructure encoder embeds every atom in a drug molecule and then selects 𝑘 atomic characteristics as
