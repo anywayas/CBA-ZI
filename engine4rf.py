@@ -88,8 +88,8 @@ class Engine4RealFakeDDI:
             if (If_newnew == True):
                 if (acc > 0.68):
                     path = self.fine_model_path + "/nn_acc{:.4f}roc{:.4f}prc{:.4f}dp{:.1f}k{:d}bs{:d}".format(acc,
-                                                                                                              auc_roc,
-                                                                                                              auc_prc,
+                                                                                                              auc,
+                                                                                                              ap,
                                                                                                               self.dropout,
                                                                                                               self.k,
                                                                                                               self.bs)
@@ -97,8 +97,8 @@ class Engine4RealFakeDDI:
             elif (If_newnew == False):
                 if (acc > 0.76):
                     path = self.fine_model_path + "/no_acc{:.4f}roc{:.4f}prc{:.4f}dp{:.1f}k{:d}bs{:d}".format(acc,
-                                                                                                              auc_roc,
-                                                                                                              auc_prc,
+                                                                                                              auc,
+                                                                                                              ap,
                                                                                                               self.dropout,
                                                                                                               self.k,
                                                                                                               self.bs)

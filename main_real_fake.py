@@ -31,7 +31,7 @@ def config():
     parser.add_argument("--sample_file", type=str, default='data/drugbank_cold_start/3/ssi_old_new_3.json')
     parser.add_argument("--block_path", type=str, default='checkpoint/3/no_acc0.7955roc0.8607prc0.8686dp0.2k26bs256')
     parser.add_argument("--fine_model_path", default='checkpoint/3')
-    parser.add_argument("--test", default=False)
+    parser.add_argument("--test", default=True)
     args = parser.parse_args()
     return args
 
