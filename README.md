@@ -55,10 +55,15 @@ rdkit == 2020.09.1 (for data preprocessing)
 Training:
 
 Train data1 in command line
+
 `python main_real_fake.py --train_filename='data/drugbank_cold_start/1/ddi_train_cleaned.csv' --test_filename1='data/drugbank_cold_start/1/ddi_bothnew_cleaned.csv' --test_filename2='data/drugbank_cold_start/1/ddi_eithernew_cleaned.csv' --sample_file='data/drugbank_cold_start/1/ssi_old_new_1.json' --test False --ratio_k=26 --dropout=0.2`  
+
 Train data2 in command line
+
 `python main_real_fake.py --train_filename='data/drugbank_cold_start/2/ddi_train_cleaned.csv' --test_filename1='data/drugbank_cold_start/2/ddi_bothnew_cleaned.csv' --test_filename2='data/drugbank_cold_start/2/ddi_eithernew_cleaned.csv' --sample_file='data/drugbank_cold_start/2/ssi_old_new_2.json' --test False --ratio_k=26 --dropout=0.2`  
+
 Train data3 in command line
+
 `python main_real_fake.py --train_filename='data/drugbank_cold_start/3/ddi_train_cleaned.csv' --test_filename1='data/drugbank_cold_start/3/ddi_bothnew_cleaned.csv' --test_filename2='data/drugbank_cold_start/3/ddi_eithernew_cleaned.csv' --sample_file='data/drugbank_cold_start/3/ssi_old_new_3.json' --test False --ratio_k=26 --dropout=0.2`  
 
 Test in command line
