@@ -52,11 +52,18 @@ PyTorch == 1.7.1+cu110
 PyTorch Geometry ==  2.0.3
 rdkit == 2020.09.1 (for data preprocessing)
 
-Train in command line
-`python main_real_fake.py --test False --ratio_k=26 --dropout=0.2`  
+Training:
+Train data1 in command line
+`python main_real_fake.py --train_filename='data/drugbank_cold_start/1/ddi_train_cleaned.csv' --test_filename1='data/drugbank_cold_start/1/ddi_bothnew_cleaned.csv' --test_filename2='data/drugbank_cold_start/1/ddi_eithernew_cleaned.csv' --sample_file='data/drugbank_cold_start/1/ssi_old_new_1.json' --test False --ratio_k=26 --dropout=0.2`  
+Train data2 in command line
+`python main_real_fake.py --train_filename='data/drugbank_cold_start/2/ddi_train_cleaned.csv' --test_filename1='data/drugbank_cold_start/2/ddi_bothnew_cleaned.csv' --test_filename2='data/drugbank_cold_start/2/ddi_eithernew_cleaned.csv' --sample_file='data/drugbank_cold_start/2/ssi_old_new_2.json' --test False --ratio_k=26 --dropout=0.2`  
+Train data3 in command line
+`python main_real_fake.py --train_filename='data/drugbank_cold_start/3/ddi_train_cleaned.csv' --test_filename1='data/drugbank_cold_start/3/ddi_bothnew_cleaned.csv' --test_filename2='data/drugbank_cold_start/3/ddi_eithernew_cleaned.csv' --sample_file='data/drugbank_cold_start/3/ssi_old_new_3.json' --test False --ratio_k=26 --dropout=0.2`  
 
 Test in command line
-`python main_real_fake.py --test True --block_path='checkpoint/3/no_acc0.7925roc0.8563prc0.8612result' `  
+`python main_real_fake.py --test True --block_path='your checkpoint path'`  
+for example:
+`python main_real_fake.py --test True --block_path='checkpoint/3/no_acc0.7925roc0.8563prc0.8612result'` 
 
 
 
