@@ -7,7 +7,7 @@ scalar indicating the probability whether drug co-administration of
 𝑑𝑥 and 𝑑𝑦 could lead to interaction 𝑟 .
 
 ##### Model
-<img src="./figure/model.png" width="450" align=center>
+<img src="./figure/model.png" width="700" align=center>
 
 [//]: # (![]&#40;./figure/model.png &#41; )
 
