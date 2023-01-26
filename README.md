@@ -1,4 +1,4 @@
-﻿## A Chemical Bonds Assisted Zigzag Iteration Network for Drug
+﻿## A Chemical Bonds Assisted Zigzag Iteration Network for Drug Drug Interaction Prediction
 #### Paper summary
 ##### Task
 The DDI prediction task aims to develop a model  that accepts two
