@@ -45,6 +45,21 @@ data2  | 69.20| 74.54| 75.95| 69.51
 data3  | 71.44| 77.79| 79.39| 72.11
 mean ± std  | 69.87 ± 1.11| 76.47 ± 1.39| 77.75 ± 1.40| 71.11 ± 1.14
 
+##### Supplementary materials for ablation experiments(D_{new-new} dataset)
+###### Ablation study for ZI module
+Method      | ACC   | AUC   | AP    |F1
+------------ |-------|-------|-------| -----
+CBA-ZI-ZI   | 56.52 | 61.98 | 61.77 | 64.45
+CBA-ZI    | 71.44 | 77.79 | 79.39 | 72.11
+
+
+###### Ablation study for CBAGNN
+GNN type     | Layer | ACC   | AUC   | AP    |F1
+------------ |-------|-------|-------|-------| -----
+RGCN-ZI | 4     | 70.42 | 77.24 | 78.68 | 71.27
+CBA-ZI(RGCN+GAT)  | 1+3   | 71.44 | 77.79 | 79.39 | 72.11
+improvement | | +1.02 | +0.55 | +0.71 | +0.84 
+
 ##### Running
 Requirements
 > Python == 3.6
